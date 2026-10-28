@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+            color: #212529;
+        }
+
+        .navbar {
+            background: #111827;
+        }
+
+        .navbar-brand {
+            color: #38bdf8 !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: white !important;
+            margin-left: 12px;
+        }
+
+        .nav-link:hover {
+            color: #38bdf8 !important;
+        }
+
+        .hero {
+            min-height: 90vh;
+            background: linear-gradient(135deg, #111827, #1e3a5f);
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: bold;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #6c757d;
+            margin-bottom: 40px;
+        }
+
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #38bdf8;
+        }
+
+        .skill-card,
+        .project-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+
+        .skill-card:hover,
+        .project-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            color: #0d6efd;
+        }
+
+        .project-card img {
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .contact-section {
+            background: #f1f5f9;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #38bdf8;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+ <!-- header section start -->
+    <header>
+        <nav class="navbar navbar-expand bg-body-danger ">
+            <div class="container-fluid bg-secondary">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Myself</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Programs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Education</a></li>
+                                <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Community Development</a>  
+                                </li>
+                                <li><a class="dropdown-item" href="#">Disability</a></li>
+                            </ul>
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="journal.html">Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- header section end -->
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+        <p class="text-info fs-5">Hello, I'm</p>
+        <h1>Fahim <span> Hasan</span></h1>
+        <h2 class="h3 mt-3">Web Developer & Designer</h2>
+        <p class="lead mt-3">
+            I build modern, responsive, and user-friendly websites.
+        </p>
+
+        <div class="mt-4">
+            <a href="#projects" class="btn btn-info btn-lg me-2">
+                View My Work
+            </a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">
+                Contact Me
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-5" id="about">
+    <div class="container py-4">
+        <div class="text-center">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me</p>
+        </div>
+
+        <div class="row align-items-center g-5">
+            <div class="col-md-5 text-center">
+                <img
+                    src="images/education_2.jpg"
+                    alt="Your profile"
+                    class="profile-img"
+                >
+            </div>
+
+            <div class="col-md-7">
+                <h3>I'm a passionate web developer.</h3>
+                <p class="text-secondary mt-3">
+                    I enjoy creating beautiful and functional websites
+                    using modern web technologies. I focus on clean code,
+                    responsive layouts, and great user experiences.
+                </p>
+                <p class="text-secondary">
+                    My goal is to turn ideas into digital experiences
+                    that are both useful and visually appealing.
+                </p>
+
+                <div class="row mt-4">
+                    <div class="col-sm-6 mb-3">
+                        <strong>Name:</strong> Fahim Hasan
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <strong>Email:</strong> fahim@gmail.com
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <strong>Location:</strong> Dhaka, Bangladesh
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <strong>Freelance:</strong> Available
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-primary mt-2">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="py-5 bg-light" id="skills">
+    <div class="container py-4">
+        <div class="text-center">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card skill-card text-center p-4">
+                    <i class="bi bi-filetype-html skill-icon"></i>
+                    <h5 class="mt-3">HTML5</h5>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-primary"
+                             style="width: 95%">95%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card skill-card text-center p-4">
+                    <i class="bi bi-filetype-css skill-icon"></i>
+                    <h5 class="mt-3">CSS3</h5>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-info"
+                             style="width: 90%">90%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card skill-card text-center p-4">
+                    <i class="bi bi-bootstrap skill-icon"></i>
+                    <h5 class="mt-3">Bootstrap 5</h5>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-purple"
+                             style="width: 85%">85%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card skill-card text-center p-4">
+                    <i class="bi bi-filetype-js skill-icon"></i>
+                    <h5 class="mt-3">JavaScript</h5>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-warning text-dark"
+                             style="width: 75%">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="py-5" id="projects">
+    <div class="container py-4">
+        <div class="text-center">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Some of my recent work</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card overflow-hidden">
+                    <img
+                        src="https://placehold.co/600x400/2563eb/ffffff?text=Portfolio+Website"
+                        class="card-img-top"
+                        alt="Portfolio website project"
+                    >
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text text-secondary">
+                            A responsive personal portfolio built with
+                            HTML, CSS, and Bootstrap.
+                        </p>
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-secondary">Bootstrap</span>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card overflow-hidden">
+                    <img
+                        src="https://placehold.co/600x400/059669/ffffff?text=E-commerce+Website"
+                        class="card-img-top"
+                        alt="E-commerce website project"
+                    >
+                    <div class="card-body p-4">
+                        <h5 class="card-title">E-commerce Website</h5>
+                        <p class="card-text text-secondary">
+                            A modern online store layout with product cards
+                            and a responsive navigation menu.
+                        </p>
+                        <span class="badge text-bg-success">Bootstrap</span>
+                        <span class="badge text-bg-dark">JavaScript</span>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card overflow-hidden">
+                    <img
+                        src="https://placehold.co/600x400/7c3aed/ffffff?text=Business+Website"
+                        class="card-img-top"
+                        alt="Business website project"
+                    >
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Business Website</h5>
+                        <p class="card-text text-secondary">
+                            A professional landing page for a business
+                            with clear calls to action.
+                        </p>
+                        <span class="badge text-bg-info">HTML</span>
+                        <span class="badge text-bg-secondary">CSS</span>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section py-5" id="contact">
+    <div class="container py-4">
+        <div class="text-center">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">
+                Have a project in mind? Let's talk!
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <form id="contactForm" class="bg-white p-4 p-md-5 rounded-3 shadow-sm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email"
+                               placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject"
+                               placeholder="Enter subject" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5"
+                                  placeholder="Write your message..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Send Message
+                    </button>
+
+                    <p id="formNotice" class="mt-3 mb-0 text-center"
+                       role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center">
+    <div class="container">
+        <div class="social-links mb-3">
+            <a href="https://github.com/" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://linkedin.com/" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://facebook.com/" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </div>
+
+        <p class="mb-1">
+            &copy; <span id="year"></span> Your Name. All rights reserved.
+        </p>
+        <small class="text-white-50">Designed with Bootstrap 5</small>
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Automatically update the copyright year
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+    // Demo form: validates inputs but does not send messages to a server
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        document.getElementById("formNotice").textContent =
+            "Thanks for your message! Connect this form to a backend to receive messages.";
+
+        document.getElementById("formNotice").className =
+            "mt-3 mb-0 text-center text-success";
+
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
