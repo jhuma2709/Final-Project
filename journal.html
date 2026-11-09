@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal - Children's Hope</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .journal-header {
+            background-color: #e9ecef;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .journal-header h1 {
+            color: #343a40;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .journal-card {
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .journal-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .journal-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .journal-card .card-body {
+            padding: 25px;
+        }
+
+        .journal-date {
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .journal-title {
+            color: #495057;
+            font-weight: bold;
+        }
+
+        .read-btn {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .read-btn:hover {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .category {
+            color: #198754;
+            font-weight: bold;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header>
+        <nav class="navbar navbar-expand bg-body-danger">
+            <div class="container-fluid bg-secondary">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Logo"
+                        width="50" height="40"
+                        class="d-inline-block align-text-top">
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center"
+                    id="navbarNav">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Myself</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                aria-current="page"
+                                href="journal.html">Journal</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="contact us.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"
+                                href="blog.html"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Programs
+                            </a>
+
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdown">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Education
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Healthcare
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Community Development
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Disability
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Journal Heading Start -->
+    <section class="journal-header">
+
+        <div class="container">
+
+            <h1>Our Journal</h1>
+
+            <p class="lead mt-3">
+                Stories, News and Updates from Children's Hope
+            </p>
+
+            <p>
+                Discover our activities, achievements and stories
+                of positive change in our community.
+            </p>
+
+        </div>
+
+    </section>
+    <!-- Journal Heading End -->
+
+
+    <!-- Journal Posts Start -->
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2>Latest Stories</h2>
+
+                <p class="text-muted">
+                    Read about our work and the lives we are helping to change.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+
+                <!-- First Journal Card -->
+                <div class="col-md-4">
+
+                    <div class="card journal-card">
+
+                        <img src="images/empowerment.jpg"
+                            class="card-img-top"
+                            alt="Children in a classroom">
+
+                        <div class="card-body">
+
+                            <p class="journal-date">
+                                15 January 2026
+                            </p>
+
+                            <p class="category">Education</p>
+
+                            <h5 class="journal-title">
+                                Education for Every Child
+                            </h5>
+
+                            <p class="card-text">
+                                Every child deserves the opportunity
+                                to receive a quality education.
+                                We work to support underprivileged
+                                children and help them build a better future.
+                            </p>
+
+                            <a href="#" class="btn read-btn">
+                                Read More
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Second Journal Card -->
+                <div class="col-md-4">
+
+                    <div class="card journal-card">
+
+                        <img src="images/walk-in+clinic.jpg"
+                            class="card-img-top"
+                            alt="Healthcare support">
+
+                        <div class="card-body">
+
+                            <p class="journal-date">
+                                20 January 2026
+                            </p>
+
+                            <p class="category">Healthcare</p>
+
+                            <h5 class="journal-title">
+                                Healthcare for a Better Life
+                            </h5>
+
+                            <p class="card-text">
+                                Good health is essential for a happy life.
+                                Our healthcare support aims to provide
+                                children and their families with access
+                                to necessary medical services.
+                            </p>
+
+                            <a href="#" class="btn read-btn">
+                                Read More
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Third Journal Card -->
+                <div class="col-md-4">
+
+                    <div class="card journal-card">
+
+                        <img src="images/download.jpg"
+                            class="card-img-top"
+                            alt="Children playing together">
+
+                        <div class="card-body">
+
+                            <p class="journal-date">
+                                25 January 2026
+                            </p>
+
+                            <p class="category">Community Development</p>
+
+                            <h5 class="journal-title">
+                                Building Stronger Communities
+                            </h5>
+
+                            <p class="card-text">
+                                Strong communities create better
+                                opportunities for everyone.
+                                We support families and work together
+                                to improve their quality of life.
+                            </p>
+
+                            <a href="#" class="btn read-btn">
+                                Read More
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Fourth Journal Card -->
+                <div class="col-md-4">
+
+                    <div class="card journal-card">
+
+                        <img src="images/download (2).jpg"
+                            class="card-img-top"
+                            alt="Community volunteers">
+
+                        <div class="card-body">
+
+                            <p class="journal-date">
+                                5 February 2026
+                            </p>
+
+                            <p class="category">Community Support</p>
+
+                            <h5 class="journal-title">
+                                Together We Can Make a Difference
+                            </h5>
+
+                            <p class="card-text">
+                                Working together can bring meaningful
+                                changes to society. Volunteers and
+                                community members play an important
+                                role in creating a better future.
+                            </p>
+
+                            <a href="#" class="btn read-btn">
+                                Read More
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Fifth Journal Card -->
+                <div class="col-md-4">
+
+                    <div class="card journal-card">
+
+                        <img src="images/Screen+Shot+2015-03-27+at+11.27.03.jpg"
+                            class="card-img-top"
+                            alt="Child learning">
+
+                        <div class="card-body">
+
+                            <p class="journal-date">
+                                10 February 2026
+                            </p>
+
+                            <p class="category">Child Development</p>
+
+                            <h5 class="journal-title">
+                                Every Child Has a Bright Future
+                            </h5>
+
+                            <p class="card-text">
+                                Children need care, love and support
+                                to reach their full potential.
+                                We believe every child deserves
+                                equal opportunities in life.
+                            </p>
+
+                            <a href="#" class="btn read-btn">
+                                Read More
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Sixth Journal Card -->
+                <div class="col-md-4">
+
+                    <div class="card journal-card">
+
+                        <img src="images/sanjita_testimony.jpg"
+                            class="card-img-top"
+                            alt="People helping the community">
+
+                        <div class="card-body">
+
+                            <p class="journal-date">
+                                15 February 2026
+                            </p>
+
+                            <p class="category">Disability Support</p>
+
+                            <h5 class="journal-title">
+                                Creating an Inclusive Society
+                            </h5>
+
+                            <p class="card-text">
+                                Everyone deserves equal opportunities
+                                and respect. We aim to support people
+                                with disabilities and encourage
+                                inclusion in our communities.
+                            </p>
+
+                            <a href="#" class="btn read-btn">
+                                Read More
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Journal Posts End -->
+
+
+    <!-- Call To Action Start -->
+    <section class="bg-secondary text-white text-center py-5">
+
+        <div class="container">
+
+            <h2>Be Part of Our Journey</h2>
+
+            <p class="mt-3">
+                Together, we can create a brighter future for children
+                and their communities.
+            </p>
+
+            <a href="contact us.html" class="btn btn-light mt-2">
+                Contact Us
+            </a>
+
+        </div>
+
+    </section>
+    <!-- Call To Action End -->
+
+
+    <!-- Footer Start -->
+    <footer class="bg-dark text-white text-center py-3">
+
+        <p class="mb-0">
+            &copy; 2026 Children's Hope. All Rights Reserved.
+        </p>
+
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
